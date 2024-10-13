@@ -1,0 +1,51 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local Window = Library:NewWindow("Winter Peeks : BS")
+
+local Tab = Window:NewSection("Auto click")
+
+Tab:CreateButton("It can’t be turned off, yk", function()
+while wait(0.1) do
+local args = {
+    [1] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.Events.Click:FireServer(unpack(args))
+end
+end)
+
+local Tab = Window:NewSection("TP to Eggs")
+
+Tab:CreateButton("TP To Eggs", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1938.73157, 5.41646528, -2020.77161, -0.0229106247, 9.90382532e-09, -0.999737501, 4.05784064e-08, 1, 8.97650487e-09, 0.999737501, -4.03620994e-08, -0.0229106247)
+end)
+
+local Tab = Window:NewSection("TP to Treasure Chest")
+
+Tab:CreateButton("TP To Treasure Chest", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2039.5155, 11.0381222, -2050.43286, 0.745980799, 1.01345634e-07, 0.665967464, 3.30211525e-09, 1, -1.55876904e-07, -0.665967464, 1.1848028e-07, 0.745980799)
+end)
+
+local Tab = Window:NewSection("TP to Diamondify Machine")
+
+Tab:CreateButton("TP To Diamondify Machine", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2054.21021, 12.2083769, -2020.75928, 0.989290535, 5.97506897e-08, 0.145959705, -5.13511971e-08, 1, -6.13144167e-08, -0.145959705, 5.31625624e-08, 0.989290535)
+end)
+
+local Tab = Window:NewSection("TP to Fight Areas")
+
+Tab:CreateButton("TP To Fight Areas", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2000.3075, 4.29802275, -1955.10461, -0.999995053, 1.04263425e-08, 0.00314271427, 1.05998295e-08, 1, 5.51863764e-08, -0.00314271427, 5.5219413e-08, -0.999995053)
+end)
+
+local Tab = Window:NewSection("TP To Portals")
+
+Tab:CreateButton("Spawn World", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1999.23425, 4.29802132, -2043.96179, 0.999969959, -1.99025116e-08, -0.00775170512, 2.00370991e-08, 1, 1.72846626e-08, 0.00775170512, -1.7439465e-08, 0.999969959)
+end)
+
+local Tab = Window:NewSection("Credits")
+
+Tab:CreateTextbox("Made By Ga5st3r980", function(text)
+        print(text)
+end)
